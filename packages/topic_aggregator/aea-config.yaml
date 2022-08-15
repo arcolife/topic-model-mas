@@ -10,8 +10,8 @@ connections: []
 contracts: []
 protocols:
 - open_aea/signing:1.0.0:bafybeighvx4vpsyspffggewidvkfq3lqbse6ap4tdewd6j5bs73ifnuaui
-skills: []
-default_connection: null
+skills:
+- arco/topic_extractor:0.1.0:bafybeib3zl6sbwz45jaxx3jetznlddsr3ez7zqfbrowtqnz5vktcaz4ib4
 default_ledger: ethereum
 required_ledgers:
 - ethereum
@@ -23,3 +23,11 @@ logging_config:
   version: 1
 dependencies:
   open-aea-ledger-ethereum: {}
+default_connection: null
+---
+# public_id: fetchai/http_server:0.22.0
+# type: connection
+# config:
+#   host: ${HOST:str:localhost}
+#   port: ${PORT:int:5000}
+#   target_skill_id: ${TARGET_SKILL:str:fetchai/http_echo:0.20.0}

@@ -47,4 +47,4 @@ https://open-aea.docs.autonolas.tech/core-components-1/
 
 - [Introduction Presentation video](https://www.youtube.com/watch?v=TFEmhM0XSQQ)
 - [code - GH](https://github.com/valory-xyz/ethlisbon)
-- 
+- https://devpost.com/software/el-collectooorr

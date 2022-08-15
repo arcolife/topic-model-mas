@@ -1,3 +1,12 @@
+- [Topic-modelling AEA](#topic-modelling-aea)
+  - [Introduction](#introduction)
+  - [Creating an Agent](#creating-an-agent)
+    - [Setup](#setup)
+  - [Add a skill](#add-a-skill)
+  - [External data-source](#external-data-source)
+  - [Testing](#testing)
+  - [Frontend](#frontend)
+
 # Topic-modelling AEA
 
 ## Introduction
@@ -38,6 +47,13 @@ aea search --local skills
 # No skills found.
 ```
 
+## Add a skill
+
+```sh
+aea scaffold skill topic_extractor
+
+```
+
 ## External data-source
 
 refs:
@@ -48,6 +64,10 @@ refs:
 refs:
 - https://open-aea.docs.autonolas.tech/quickstart/#test-quickstart
 - https://github.com/valory-xyz/open-autonomy/blob/main/tests/test_agents/test_hello_world.py
+
+```sh
+pipenv run pytest test.py
+```
 
 ## Frontend
 
