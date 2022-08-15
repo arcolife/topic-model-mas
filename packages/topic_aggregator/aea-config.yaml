@@ -1,5 +1,5 @@
 agent_name: topic_aggregator
-author: arco
+author: arcolife
 version: 0.1.0
 license: Apache-2.0
 description: ''
@@ -9,9 +9,8 @@ fingerprint_ignore_patterns: []
 connections: []
 contracts: []
 protocols:
-- open_aea/signing:1.0.0:bafybeighvx4vpsyspffggewidvkfq3lqbse6ap4tdewd6j5bs73ifnuaui
 skills:
-- arco/topic_extractor:0.1.0:bafybeib3zl6sbwz45jaxx3jetznlddsr3ez7zqfbrowtqnz5vktcaz4ib4
+- arcolife/topic_extractor:0.1.0:bafybeib3zl6sbwz45jaxx3jetznlddsr3ez7zqfbrowtqnz5vktcaz4ib4
 default_ledger: ethereum
 required_ledgers:
 - ethereum

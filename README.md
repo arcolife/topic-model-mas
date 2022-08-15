@@ -3,6 +3,8 @@
   - [Creating an Agent](#creating-an-agent)
     - [Setup](#setup)
   - [Add a skill](#add-a-skill)
+  - [Fingerprinting packages and skills](#fingerprinting-packages-and-skills)
+  - [Search local packages](#search-local-packages)
   - [External data-source](#external-data-source)
   - [Testing](#testing)
   - [Frontend](#frontend)
@@ -41,7 +43,7 @@ Initialize new agent
 ```sh
 autonomy init --remote
 cd packages
-aea create topic_aggregator
+aea create topic_aggregator --remote --empty
 aea search --local skills
 # Searching for ""...
 # No skills found.
@@ -51,7 +53,38 @@ aea search --local skills
 
 ```sh
 aea scaffold skill topic_extractor
+```
 
+## Fingerprinting packages and skills
+
+```sh
+aea fingerprint by-path packages/topic_aggregator/skills/topic_extractor 
+```
+
+refs:
+- https://github.com/valory-xyz/ethlisbon/blob/master/Makefile
+
+## Search local packages
+
+```sh
+aea search --local skills
+Searching for ""...
+Skills found:
+
+------------------------------
+Public ID: valory/abstract_round_abci:0.1.0
+Name: abstract_round_abci
+Description: abstract round-based ABCI application
+Author: valory
+Version: 0.1.0
+------------------------------
+------------------------------
+Public ID: arco/topic_extractor:0.1.0
+Name: topic_extractor
+Description: The scaffold skill is a scaffold for your own skill implementation.
+Author: arco
+Version: 0.1.0
+------------------------------
 ```
 
 ## External data-source
