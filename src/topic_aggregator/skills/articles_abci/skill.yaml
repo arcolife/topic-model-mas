@@ -1,0 +1,91 @@
+name: articles_abci
+author: arcolife
+version: 0.1.0
+type: skill
+description: Topic Modelling and Note Taking ABCI Application
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeibg2ci22xp2knpjdd5om4phr7gudhei4qo7twb3p75vnvwomw2xtq
+  behaviours.py: bafybeie5nrv3jybwzxiqmduwqvyu42vpf2v5znfmc3lfxf3e356nqdd65y
+  dialogues.py: bafybeibvt5uwblourgvwm7z3vzhekfspd4okwugccibthe55pcazhrcd4m
+  fsm_specification.yaml: bafybeigto3wntxw7tv3zpuiu5p4plr7v4z7juvwxuixxb4npknldrqtm3a
+  handlers.py: bafybeidbzba4ctw5ndcf2ccpwhab2eo2quyf7j6ofxaeheet4rikrgterq
+  models.py: bafybeicgvolddbkrxmuywchq56fiscu5ahjpya6dmpzmzpavy4bvybrxwi
+  payloads.py: bafybeiftccefnl7lrlkchsc2higu7oy3b54y2r2fzh6ogmvze5yliafryu
+  rounds.py: bafybeiapcvgjtmb4usxugtx6hsb5k5e3fvd477xd7dka7dglia6bs2rgyq
+fingerprint_ignore_patterns: []
+connections: []
+contracts: []
+protocols: []
+skills: []
+behaviours:
+  http_request:
+    args:
+      body: ''
+      lookup_termination_key: null
+      method: null
+      request_interval: 20
+      url: null
+    class_name: HttpRequestBehaviour
+  main:
+    args: {}
+    class_name: NoteTakingRoundBehaviour
+handlers:
+  abci:
+    args: {}
+    class_name: NoteTakingABCIHandler
+  http:
+    args:
+      shared_state_key: null
+    class_name: HttpHandler
+  signing:
+    args: {}
+    class_name: SigningHandler
+models:
+  abci_dialogues:
+    args: {}
+    class_name: AbciDialogues
+  benchmark_tool:
+    args:
+      log_dir: /logs
+    class_name: BenchmarkTool
+  http_dialogues:
+    args: {}
+    class_name: HttpDialogues
+  params:
+    args:
+      cleanup_history_depth: 1
+      cleanup_history_depth_current: null
+      consensus:
+        max_participants: 1
+      drand_public_key: 868f005eb8e6e4ca0a47c8a77ceaa5309a47978a7c71bc5cce96366b5d7a569937c529eeda66c7293784a9402801af31
+      keeper_timeout: 30.0
+      max_healthcheck: 120
+      observation_interval: 10
+      on_chain_service_id: null
+      reset_tendermint_after: 2
+      retry_attempts: 400
+      retry_timeout: 3
+      round_timeout_seconds: 30.0
+      service_id: topic_extractor
+      service_registry_address: null
+      setup: {}
+      share_tm_config_on_startup: false
+      sleep_time: 1
+      tendermint_check_sleep_delay: 3
+      tendermint_com_url: http://localhost:8080
+      tendermint_max_retries: 5
+      tendermint_url: http://localhost:26657
+    class_name: Params
+  requests:
+    args: {}
+    class_name: Requests
+  signing_dialogues:
+    args: {}
+    class_name: SigningDialogues
+  state:
+    args: {}
+    class_name: SharedState
+dependencies: {}
+is_abstract: false

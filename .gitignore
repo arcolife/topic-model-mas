@@ -127,7 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-## Temporary
-packages/valory
-packages/open_aea
