@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 open-autonomy = "*"
+grpcio = "*"
 
 [dev-packages]
 
