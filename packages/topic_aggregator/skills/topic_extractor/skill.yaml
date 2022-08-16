@@ -6,7 +6,7 @@ description: Topic Modelling and Note Taking ABCI Application`
 license: Apache-2.0
 aea_version: '>=1.0.0, <2.0.0'
 fingerprint:
-  __init__.py: bafybeigzqc2dg4vfsh2erzsnjt4nzdrrfx24owwkqelcenapyq4cjof7ie
+  __init__.py: bafybeifzva4znqbb35kz3q4dd7vey77ine34yadqrkh4qe4ozg2vgnjybi
   behaviours.py: bafybeie5nrv3jybwzxiqmduwqvyu42vpf2v5znfmc3lfxf3e356nqdd65y
   dialogues.py: bafybeibvt5uwblourgvwm7z3vzhekfspd4okwugccibthe55pcazhrcd4m
   fsm_specification.yaml: bafybeigto3wntxw7tv3zpuiu5p4plr7v4z7juvwxuixxb4npknldrqtm3a
